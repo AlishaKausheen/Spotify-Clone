@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sasta Spotify</title>
+    <link rel="stylesheet" href="spotify.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css" integrity="sha384-b6lVK+yci+bfDmaY1u0zE8YYJt0TZxLEAFyYSLHId4xoVvsrQu3INevFKo+Xir8e" crossorigin="anonymous">
+</head>
+
+<body style="background-color: rgb(27, 2, 53)">
+    <nav>
+        <ul>
+            <li class="brand"><img src="logo.png" alt="Spotify">Spotify</li>
+            <li>Home</li>
+            <li>About</li>
+        </ul>
+    </nav>
+    <div class="container">
+        <div class="songList">
+            <h1>All time favourite songs</h1>
+            <div class="songItemContainer">
+                <div class="songItem">
+                    <img alt="1">
+                    <span class="songName">Banjaara</span>
+                    <span class="songListplay"><span class="timestamp">05:36<i id="0" class="bi songItemPlay bi-play-circle-fill" style="font-size: 23px;"></i></span></span>
+                </div>
+                <div class="songItem">
+                    <img alt="2">
+                    <span class="songName">Ehd-e-Wafa</span>
+                    <span class="songListplay"><span class="timestamp">04:25<i id="1" class="bi songItemPlay bi-play-circle-fill" style="font-size: 23px;"></i></span></span>
+                </div>
+                <div class="songItem">
+                    <img alt="3">
+                    <span class="songName">Illahi</span>
+                    <span class="songListplay"><span class="timestamp">03:49<i id="2" class="bi songItemPlay bi-play-circle-fill" style="font-size: 23px;"></i></span></span>
+                </div>
+                <div class="songItem">
+                    <img alt="4">
+                    <span class="songName">Lagte Masoom Hai</span>
+                    <span class="songListplay"><span class="timestamp">04:08<i id="3" class="bi songItemPlay bi-play-circle-fill" style="font-size: 23px;"></i></span></span>
+                </div>
+                <div class="songItem">
+                    <img alt="5">
+                    <span class="songName">Tere Bina Jeena</span>
+                    <span class="songListplay"><span class="timestamp">05:38<i id="4" class="bi songItemPlay bi-play-circle-fill" style="font-size: 23px;"></i></span></span>
+                </div>
+                <div class="songItem">
+                    <img alt="6">
+                    <span class="songName">Ye Raatein Ye Mausam</span>
+                    <span class="songListplay"><span class="timestamp">03:39<i id="5" class="bi songItemPlay bi-play-circle-fill" style="font-size: 23px;"></i></span></span>
+                </div>
+                <div class="songItem">
+                    <img alt="7">
+                    <span class="songName">Ankhon se Batana</span>
+                    <span class="songListplay"><span class="timestamp">03:43<i id="6" class="bi songItemPlay bi-play-circle-fill" style="font-size: 23px;"></i></span></span>
+                </div>
+                <div class="songItem">
+                    <img alt="8">
+                    <span class="songName">Subhanaallah</span>
+                    <span class="songListplay"><span class="timestamp">04:09<i id="7" class="bi songItemPlay bi-play-circle-fill" style="font-size: 23px;"></i></span></span>
+                </div>
+            </div>
+        </div>
+        <div class="songBanner"></div>
+
+    </div>
+    <div class="bottom">
+        <input type="range" name="range" id="progressBar" min="0" value="0" max="100">
+        <div class="icons">
+            <i id="previous" class="bi bottomIcons bi-skip-backward-circle-fill" style="font-size: 40px"></i>
+            <i class="bi bottomIcons bi-play-circle-fill" id="masterPlay" style="font-size: 40px"></i>
+            <i id="next" class="bi bottomIcons bi-skip-forward-circle-fill" style="font-size: 40px"></i>
+        </div>
+        <div class="songInfo">
+            <img src="music.gif" width="80px" alt="music" id="gif"><span id="masterSongName">Subhanallah</span></div>
+    </div>
+    <script src="spotify.js"></script>
+</body>
+
+</html>

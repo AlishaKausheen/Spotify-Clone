@@ -1,0 +1,128 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    font-family: sans-serif;
+    position: sticky;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    height: 50px;
+    background-color: rgb(6, 6, 6);
+    color: aliceblue;
+}
+
+nav ul li {
+    padding: 0 12px;
+}
+
+.container h1 {
+    color: aliceblue;
+    /*min-height: 11vh;*/
+}
+
+.brand img {
+    width: 58px;
+    height: 45px;
+    padding: 0 6px;
+}
+
+.brand {
+    display: flex;
+    align-items: center;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 1.3rem;
+}
+
+.container {
+    min-height: 75vh;
+    color: rgb(233, 239, 245);
+    background-color: rgb(2, 2, 104);
+    font-family: sans-serif;
+    display: flex;
+    width: 70%;
+    margin: 23px auto;
+    border: 12px;
+    background-image: url('background.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.bottom {
+    position: sticky;
+    height: 100px;
+    background-color: rgb(8, 8, 8);
+    bottom: 0;
+    display: flex;
+    color: aliceblue;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+/*.icons {
+    margin-top: 2px;
+}*/
+
+.icons i {
+    cursor: pointer;
+}
+
+.icons bi {
+    color: aliceblue;
+}
+
+#progressBar {
+    margin-top: 14px;
+    width: 80vw;
+    margin-bottom: 0;
+    cursor: pointer;
+}
+
+.songInfo {
+    position: absolute;
+    left: 0vw;
+    bottom: 10px;
+    font-family: sans-serif;
+}
+
+.songInfo img {
+    opacity: 0;
+    transition: opacity 0.4s ease-in;
+}
+
+.songItemContainer {
+    margin-top: 42px;
+}
+
+.songItem {
+    height: 40px;
+    display: flex;
+    background-color: rgb(35, 2, 67);
+    /*width: 111%;*/
+    margin: 8px 0;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 34px;
+}
+
+.songItem img {
+    height: 40px;
+    width: 43px;
+    margin: 0 23px;
+    border-radius: 50%;
+}
+
+.timestamp {
+    margin: 0 10px;
+}
+
+.timestamp i {
+    cursor: pointer;
+}
